@@ -19,7 +19,7 @@ function sendWhatsAppMessage() {
     var message = document.getElementById('message').value;
 
     // El número de teléfono con el código de país (sin el signo +)
-    var phoneNumber = '51992390883';
+    var phoneNumber = '51968215184';
 
     // Mensaje personalizado para enviar en WhatsApp
     var whatsappMessage = 'Hola, soy ' + name + '\n' + 'Mi correo es: ' + email + '\n' +'mi numero es: '+ telefono +'\n' +'soy de: '+ empresa +'\n' +'tengo una consulta: '+ message;
