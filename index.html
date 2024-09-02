@@ -1,359 +1,587 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="EMAO Consultora Constructora brinda soluciones integrales en construcción, consultoría, estudios de preinversión, expedientes técnicos, y más." />
+    <meta name="keywords" content="consultora constructora, EMAO, construcción, estudios de preinversión, expedientes técnicos, ejecución de proyectos, diagnósticos de infraestructura" />
+    <meta name="author" content="EMAO Consultora Constructora" />
+    <link rel="shortcut icon" href="/assets/images/Logo emao.png" />
+    <title>Consultora Constructora EMAO</title>
+    <link rel="shortcut icon" href="/assets/images/Logo emao.png" />
+    <title>Consultora Constructora EMAO</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-05FK50M3DR"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-05FK50M3DR');
 </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Logo emao.png">
-    <title>Consultora constructora emao</title>
-    
-</head>
-<body>
+  <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <img src="Logo emao.png" class="rounded-image img-fluid logo-image" alt="emp">
-        <div class="container">
-            <a class="navbar-brand" href="#">Consultora y Constructora Emao</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Constructora Consultora EMAO</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    <!-- Header -->
-    <header class="text-center py-5 header">
-        <div class="container">
-            <h1>GERENCIAMOS Y SUPERVISAMOS TU PROYECTO</h1>
-            <button class="btn mt-3 consultation-button" data-bs-toggle="modal" data-bs-target="#consultationModal">Consulta gratuita</button>
-        </div>
+    <!-- Hero Section with Background Image -->
+    <header class="hero-section text-white text-center">
+      <div
+        class="container d-flex flex-column justify-content-center align-items-center"
+      >
+        <img
+          src="/assets/images/Logo emao.png"
+          class="logo-img"
+          alt="logoprincipalemao"
+        />
+        <h1 class="hero-text">Bienvenidos a EMAO Consultora Constructora</h1>
+        <p class="lead hero-text">Construyendo el futuro con cada proyecto.</p>
+      </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <img src="sobre.jpg" class="rounded-image img-fluid" alt="Nosotros">
-                </div>
-                <div class="col-lg-6">
-                    <h2>Bienvenidos</h2>
-                    <h3 class="company-name"><b>EMAO SAC</b></h3>
-                    <p>Somos una empresa líder en el sector de la construcción y consultoría, Nuestro equipo está compuesto por profesionales altamente capacitados que trabajan con dedicación y compromiso para garantizar la satisfacción de nuestros clientes.</p>
-                </div>
-            </div>
+   <!-- About Us Section -->
+<section id="about" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Sobre Nosotros</h2>
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+          <img src="/assets/images/ingenierosciviles.jpg" alt="portadaemao" class="img-fluid">
         </div>
-    </section>
-<!-- Services Section -->
+        <div class="col-lg-6 d-flex align-items-center justify-content-center flex-column">
+          <p>
+            EMAO Consultora Constructora es una empresa dedicada a ofrecer
+            soluciones integrales en el campo de la construcción y la
+            consultoría. Nuestro equipo de expertos se especializa en todas
+            las etapas del ciclo de vida de los proyectos, desde el estudio
+            inicial hasta la ejecución y supervisión final.
+          </p>
+          <p>
+            Nuestro compromiso es proporcionar servicios de alta calidad,
+            asegurando que cada proyecto se complete dentro del presupuesto y
+            el plazo acordados, manteniendo siempre los más altos estándares
+            de seguridad y sostenibilidad.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+   <!-- Services Section -->
 <section id="services" class="py-5">
     <div class="container">
-        <div class="row text-center">
-            <h2>Portafolio de servicios</h2>
-            <div class="col-lg-4">
-                <div class="service-box">
-                    <i class="bi bi-building service-icon"></i>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPreInversion">
-                        Estudios de pre inversión
-                    </button>
-                </div>
+      <h2 class="text-center mb-4">Nuestros Servicios</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="card mb-4 bg-preinversion">
+            <div class="card-body">
+              <h5 class="card-title">
+                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalPreInversion">
+                  Estudios de pre inversión
+                </button>
+              </h5>
+              <p class="card-text">
+                Análisis detallado para la planificación de tus proyectos.
+              </p>
             </div>
-            <div class="col-lg-4">
-                <div class="service-box">
-                    <i class="bi bi-building service-icon"></i>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalExpedientes">
-                        Expedientes técnicos
-                    </button>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="service-box">
-                    <i class="bi bi-lightbulb service-icon"></i>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProyectos">
-                        Ejecución de proyectos
-                    </button>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="service-box">
-                    <i class="bi bi-tools service-icon"></i>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDiagnosticos">
-                        Diagnósticos de infraestructura y servicios
-                    </button>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="service-box">
-                    <i class="bi bi-tools service-icon"></i>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalIntervencion">
-                        Actividades de intervención inmediata
-                    </button>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col-md-4">
+          <div class="card mb-4 bg-expedientes">
+            <div class="card-body">
+              <h5 class="card-title">
+                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalExpedientes">
+                  Expedientes técnicos
+                </button>
+              </h5>
+              <p class="card-text">
+                Documentación completa para la ejecución efectiva de obras.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 bg-ejecucion">
+            <div class="card-body">
+              <h5 class="card-title">
+                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalEjecucion">
+                  Ejecución de proyectos
+                </button>
+              </h5>
+              <p class="card-text">
+                Gestión y supervisión de proyectos de construcción.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="card mb-4 bg-diagnosticos">
+            <div class="card-body">
+              <h5 class="card-title">
+                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalDiagnosticos">
+                  Diagnósticos de infraestructura y servicios
+                </button>
+              </h5>
+              <p class="card-text">
+                Evaluaciones técnicas para asegurar la calidad y funcionalidad.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 bg-intervencion">
+            <div class="card-body">
+              <h5 class="card-title">
+                <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalIntervencion">
+                  Actividades de intervención inmediata
+                </button>
+              </h5>
+              <p class="card-text">
+                Soluciones rápidas para emergencias en infraestructura.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
-<!-- Modal: Estudios de pre inversión -->
+  </section>
+
+  
+  <!-- Modales -->
+<!-- Modal Estudios de Pre Inversión -->
 <div class="modal fade" id="modalPreInversion" tabindex="-1" aria-labelledby="modalPreInversionLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalPreInversionLabel">Estudios de pre inversión</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Contenido del modal -->
-                <p>Realizamos estudios previos a la ejecución de tu proyecto para evalúan la viabilidad técnica, económica, y social de tu inversión. </p>
-                <p>OJO: </p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPreInversionLabel"><strong>Estudios de pre inversión</strong></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <!-- Contenido detallado del servicio -->
+          <h6><strong>¿Qué Incluye un Estudio de Preinversión en EMAO?</strong></h6>
+          <ul>
+            <li><strong>Análisis de Factibilidad Técnica:</strong> 
+              <p><strong>Contenido:</strong> Documento que describe en detalle el proyecto, incluyendo sus objetivos, alcance, metodología, y características técnicas. Se incluyen aspectos como la justificación del proyecto, los resultados esperados, y las principales actividades a realizar.</p>
+              <p><strong>Objetivo:</strong> Proporcionar una visión clara y completa del proyecto para que todas las partes involucradas comprendan su propósito y plan de ejecución.</p>
+            </li>
+            <li><strong>Estudio de Mercado:</strong>
+              <p><strong>Contenido:</strong> Análisis de la demanda y oferta en el mercado relacionado con el proyecto, incluyendo la identificación de la competencia, las tendencias del mercado, y las necesidades del cliente final.</p>
+              <p><strong>Objetivo:</strong> Determinar la viabilidad comercial del proyecto, asegurando que exista una demanda real y suficiente para justificar la inversión.</p>
+            </li>
+            <li><strong>Evaluación Económica y Financiera:</strong>
+              <p><strong>Contenido:</strong> Análisis de los costos y beneficios asociados al proyecto, incluyendo proyecciones de flujo de caja, estimación de costos de inversión, y análisis de rentabilidad.</p>
+              <p><strong>Objetivo:</strong> Asegurar que el proyecto sea económicamente viable y que ofrezca un retorno de inversión adecuado.</p>
+            </li>
+            <li><strong>Análisis de Impacto Ambiental:</strong>
+              <p><strong>Contenido:</strong> Evaluación de los posibles impactos ambientales del proyecto, incluyendo la identificación de riesgos y la propuesta de medidas de mitigación.</p>
+              <p><strong>Objetivo:</strong> Garantizar que el proyecto cumpla con las normativas ambientales y que minimice cualquier impacto negativo en el entorno.</p>
+            </li>
+            <li><strong>Estudio de Viabilidad Legal y Normativa:</strong>
+              <p><strong>Contenido:</strong> Revisión del marco legal y normativo aplicable al proyecto, incluyendo permisos, licencias, y regulaciones específicas.</p>
+              <p><strong>Objetivo:</strong> Asegurar que el proyecto cumpla con todas las leyes y regulaciones aplicables, evitando riesgos legales y retrasos en la implementación.</p>
+            </li>
+            <li><strong>Formulación de Propuestas y Estrategias de Implementación:</strong>
+              <p><strong>Contenido:</strong> Desarrollo de un plan estratégico para la ejecución del proyecto, incluyendo cronogramas, estimación de recursos, y estrategias de mitigación de riesgos.</p>
+              <p><strong>Objetivo:</strong> Proporcionar un plan de acción claro y viable que guíe la implementación exitosa del proyecto.</p>
+            </li>
+          </ul>
+  
+          <h6><strong>Cuándo Utilizar los Servicios de Estudio de Preinversión de EMAO</strong></h6>
+          <ul>
+            <li><strong>Antes de Iniciar un Proyecto de Infraestructura:</strong> Ideal para evaluar la viabilidad y planificar de manera efectiva antes de invertir en un nuevo proyecto de infraestructura.</li>
+            <li><strong>Al Explorar Nuevas Oportunades de Negocio:</strong> Proporciona el análisis necesario para tomar decisiones informadas al considerar la expansión o diversificación de su negocio.</li>
+            <li><strong>En Proyectos de Consultoría para el Sector Público:</strong> Adaptado a las necesidades del sector público, asegurando transparencia y eficiencia en la evaluación rigurosa antes de comprometer recursos.</li>
+            <li><strong>Al Buscar Financiamiento para Proyectos:</strong> Un estudio de preinversión bien documentado es fundamental para convencer a los inversores o instituciones financieras.</li>
+          </ul>
+  
+          <h6><strong>Recomendaciones para los Clientes de EMAO</strong></h6>
+          <ul>
+            <li><strong>Defina Claramente sus Objetivos:</strong> Establezca claramente sus objetivos y expectativas para enfocar el análisis de manera precisa.</li>
+            <li><strong>Proporcione Información Completa y Actualizada:</strong> Facilite datos técnicos, financieros y legales completos y actuales para un análisis más preciso.</li>
+            <li><strong>Participe en el Proceso de Evaluación:</strong> Su participación activa garantiza que se consideren todas sus preocupaciones y expectativas.</li>
+            <li><strong>Evalúe los Escenarios Propuestos:</strong> Revise los diferentes escenarios y recomendaciones para tomar decisiones informadas.</li>
+            <li><strong>Planifique con Anticipación:</strong> Utilice los resultados del estudio para planificar todas las fases del proyecto con suficiente anticipación.</li>
+            <li><strong>Mantenga una Comunicación Abierta:</strong> Mantenga una comunicación constante para resolver dudas, ajustar estrategias o realizar modificaciones.</li>
+          </ul>
+        </div>
+      </div>
     </div>
-</div>
-
-<!-- Modal: Expedientes técnicos -->
-<div class="modal fade" id="modalExpedientes" tabindex="-1" aria-labelledby="modalExpedientesLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalExpedientesLabel">Expedientes técnicos</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Contenido del modal -->
-                <p>Tendras documentos detallados para la ejecución de un proyecto, incluyendo planos, especificaciones técnicas, costos, cronograma, y estudios específicos.</p>
-                
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
+  </div>
+  
+ <!-- Modal Elaboración de Expediente Técnico -->
+<div class="modal fade" id="modalExpedientes" tabindex="-1" aria-labelledby="modalExpedienteTecnicoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalExpedienteTecnicoLabel"><strong>Elaboración de Expediente Técnico</strong></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <!-- Contenido detallado del servicio -->
+          <h6><strong>¿Qué Incluye la Elaboración de un Expediente Técnico en EMAO?</strong></h6>
+          <ul>
+            <li><strong>Memoria Descriptiva del Proyecto:</strong>
+              <p><strong>Contenido:</strong> Documento que describe en detalle el proyecto, incluyendo sus objetivos, alcance, metodología, y características técnicas. Se incluyen aspectos como la justificación del proyecto, los resultados esperados, y las principales actividades a realizar.</p>
+              <p><strong>Objetivo:</strong> Proporcionar una visión clara y completa del proyecto para que todas las partes involucradas comprendan su propósito y plan de ejecución.</p>
+            </li>
+            <li><strong>Planos y Especificaciones Técnicas:</strong>
+              <p><strong>Contenido:</strong> Conjunto de planos detallados que ilustran la estructura, instalaciones, y otros componentes del proyecto. Las especificaciones técnicas describen los materiales, equipos, y métodos de construcción que deben utilizarse.</p>
+              <p><strong>Objetivo:</strong> Garantizar que el proyecto se ejecute conforme a las especificaciones exactas y con los materiales y métodos adecuados.</p>
+            </li>
+            <li><strong>Presupuesto y Análisis de Costos:</strong>
+              <p><strong>Contenido:</strong> Cálculo detallado de todos los costos asociados al proyecto, incluyendo materiales, mano de obra, maquinaria, y otros gastos directos e indirectos. Se incluye también el análisis de precios unitarios y el presupuesto total del proyecto.</p>
+              <p><strong>Objetivo:</strong> Asegurar que el proyecto se mantenga dentro del presupuesto previsto, evitando sobrecostos y garantizando la rentabilidad.</p>
+            </li>
+            <li><strong>Cronograma de Ejecución:</strong>
+              <p><strong>Contenido:</strong> Plan de trabajo que establece los tiempos de inicio y finalización de cada fase del proyecto, incluyendo hitos importantes y actividades críticas.</p>
+              <p><strong>Objetivo:</strong> Facilitar la planificación y seguimiento del proyecto para asegurar su finalización dentro del plazo establecido.</p>
+            </li>
+            <li><strong>Estudios de Impacto Ambiental:</strong>
+              <p><strong>Contenido:</strong> Evaluación de los posibles impactos ambientales del proyecto, con propuestas de medidas de mitigación. Este documento es esencial para cumplir con las normativas ambientales vigentes.</p>
+              <p><strong>Objetivo:</strong> Minimizar los impactos negativos en el medio ambiente y asegurar que el proyecto sea sostenible a largo plazo.</p>
+            </li>
+            <li><strong>Estudios Geotécnicos y Topográficos:</strong>
+              <p><strong>Contenido:</strong> Informes que detallan las condiciones del terreno y su capacidad para soportar la estructura propuesta. Incluye análisis de suelo, estudios de nivelación, y recomendaciones para la construcción.</p>
+              <p><strong>Objetivo:</strong> Asegurar la estabilidad y seguridad estructural del proyecto desde sus cimientos.</p>
+            </li>
+            <li><strong>Permisos y Licencias:</strong>
+              <p><strong>Contenido:</strong> Documentación necesaria para obtener los permisos y licencias requeridos para la ejecución del proyecto. Esto puede incluir trámites ante municipalidades, entidades gubernamentales, y otras organizaciones reguladoras.</p>
+              <p><strong>Objetivo:</strong> Garantizar que el proyecto cumple con todas las normativas legales y que se pueden evitar problemas legales o interrupciones.</p>
+            </li>
+          </ul>
+  
+          <h6><strong>Cuándo Utilizar los Servicios de Elaboración de Expedientes Técnicos de EMAO</strong></h6>
+          <ul>
+            <li><strong>Antes de Iniciar la Ejecución de un Proyecto:</strong> El expediente técnico es fundamental antes de comenzar cualquier obra. Asegura que todos los aspectos del proyecto han sido planificados detalladamente y que no habrá sorpresas durante la construcción.</li>
+            <li><strong>Al Licitar Proyectos Públicos:</strong> Para participar en licitaciones públicas, es esencial contar con un expediente técnico completo que cumpla con todos los requisitos establecidos por la entidad convocante.</li>
+            <li><strong>En Proyectos Financiados por Instituciones:</strong> Si el proyecto requiere financiamiento externo, un expediente técnico detallado y preciso es indispensable para que las instituciones financieras aprueben los fondos necesarios.</li>
+            <li><strong>Para Garantizar la Calidad y Seguridad de la Obra:</strong> Un expediente técnico bien elaborado asegura que la obra se ejecute con los más altos estándares de calidad y seguridad, minimizando riesgos y garantizando un resultado exitoso.</li>
+          </ul>
+  
+          <h6><strong>Recomendaciones para los Clientes de EMAO</strong></h6>
+          <ul>
+            <li><strong>Defina Claramente el Alcance del Proyecto:</strong> Es fundamental que tenga una visión clara del alcance y los objetivos del proyecto. Esto facilitará la elaboración de un expediente técnico que refleje fielmente sus expectativas y necesidades.</li>
+            <li><strong>Proporcione Información Completa:</strong> Cuanta más información detallada pueda proporcionar sobre el terreno, el entorno y las especificaciones deseadas, más preciso y eficiente será el expediente técnico.</li>
+            <li><strong>Participe Activamente en el Proceso:</strong> Mantenga una comunicación constante con nuestro equipo durante la elaboración del expediente técnico. Su participación es clave para asegurar que el documento final cumpla con todas sus expectativas.</li>
+            <li><strong>Revise Detenidamente el Expediente:</strong> Una vez elaborado, revise cada sección del expediente técnico para asegurarse de que no haya omisiones o errores. Esto evitará problemas durante la fase de ejecución.</li>
+            <li><strong>Utilice el Expediente Técnico como Herramienta de Gestión:</strong> El expediente técnico no solo es un requisito formal, sino también una herramienta práctica para la gestión y seguimiento del proyecto. Utilícelo para guiar todas las fases de la obra.</li>
+            <li><strong>Considere la Sostenibilidad y Cumplimiento Normativo:</strong> Asegúrese de que el expediente técnico incluya todas las consideraciones ambientales y de cumplimiento normativo necesarias para evitar problemas legales y garantizar la sostenibilidad del proyecto.</li>
+          </ul>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
-<!-- Modal: Ejecución de proyectos -->
-<div class="modal fade" id="modalProyectos" tabindex="-1" aria-labelledby="modalProyectosLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalProyectosLabel">Ejecución de proyectos</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Contenido del modal -->
-                <p>Llevaremos a cabo las obras o acciones planificadas en tu proyecto, de acuerdo a lo especificado en tu expediente técnico.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
+  
+  <!-- Modal Ejecución de Proyectos -->
+<div class="modal fade" id="modalEjecucion" tabindex="-1" aria-labelledby="modalEjecucionLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalEjecucionLabel"><strong>Ejecución de Proyectos</strong></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <!-- Contenido detallado del servicio -->
+          <h6><strong>¿Qué Incluye la Ejecución de Proyectos en EMAO?</strong></h6>
+          <ul>
+            <li><strong>Planificación y Organización del Proyecto:</strong>
+              <p><strong>Contenido:</strong> Desarrollo de un plan detallado que incluye cronogramas, asignación de recursos, y definición de responsabilidades. Esto abarca la coordinación de todas las actividades necesarias para iniciar y completar el proyecto.</p>
+              <p><strong>Objetivo:</strong> Establecer una base sólida para la ejecución, asegurando que todos los aspectos del proyecto estén bien organizados desde el principio.</p>
+            </li>
+            <li><strong>Gestión de Recursos Humanos y Materiales:</strong>
+              <p><strong>Contenido:</strong> Coordinación y gestión de todos los recursos humanos, materiales y equipos necesarios para la ejecución del proyecto. Esto incluye la selección de proveedores, adquisición de materiales y contratación de mano de obra.</p>
+              <p><strong>Objetivo:</strong> Asegurar que los recursos sean utilizados de manera óptima para cumplir con los estándares de calidad y el cronograma establecido.</p>
+            </li>
+            <li><strong>Supervisión y Control de Calidad:</strong>
+              <p><strong>Contenido:</strong> Implementación de sistemas de control de calidad en todas las fases del proyecto. Se realizan inspecciones y verificaciones continuas para garantizar que la construcción cumpla con las especificaciones técnicas y normativas.</p>
+              <p><strong>Objetivo:</strong> Garantizar que cada etapa del proyecto cumpla con los estándares de calidad requeridos, minimizando errores y retrabajos.</p>
+            </li>
+            <li><strong>Cumplimiento de Normativas y Seguridad:</strong>
+              <p><strong>Contenido:</strong> Aseguramiento del cumplimiento de todas las normativas legales, ambientales, y de seguridad. Esto incluye la implementación de protocolos de seguridad en obra y la obtención de los permisos necesarios.</p>
+              <p><strong>Objetivo:</strong> Proteger a todos los involucrados en el proyecto y asegurar que la obra cumpla con las regulaciones vigentes, evitando sanciones y retrasos.</p>
+            </li>
+            <li><strong>Gestión de Costos y Presupuestos:</strong>
+              <p><strong>Contenido:</strong> Monitoreo y control de los costos durante toda la ejecución del proyecto. Se realiza un seguimiento continuo del presupuesto para asegurar que se mantenga dentro de los límites establecidos.</p>
+              <p><strong>Objetivo:</strong> Prevenir sobrecostos y garantizar que el proyecto se complete dentro del presupuesto acordado.</p>
+            </li>
+            <li><strong>Comunicación y Reporte de Progreso:</strong>
+              <p><strong>Contenido:</strong> Mantenimiento de una comunicación constante y transparente con el cliente a través de reportes de progreso regulares. Estos informes incluyen el estado del cronograma, el uso de recursos y cualquier desafío que surja durante la ejecución.</p>
+              <p><strong>Objetivo:</strong> Mantener informados a los clientes sobre el progreso del proyecto y permitir la toma de decisiones informadas en caso de que sea necesario realizar ajustes.</p>
+            </li>
+            <li><strong>Entrega y Cierre del Proyecto:</strong>
+              <p><strong>Contenido:</strong> Finalización de todas las actividades del proyecto, incluyendo la entrega formal de la obra, la revisión de los documentos finales, y la resolución de cualquier asunto pendiente.</p>
+              <p><strong>Objetivo:</strong> Asegurar una transición fluida desde la construcción hasta la operación del proyecto, garantizando la satisfacción del cliente.</p>
+            </li>
+          </ul>
+
+          <h6><strong>Cuándo Utilizar los Servicios de Ejecución de Proyectos de EMAO</strong></h6>
+          <ul>
+            <li><strong>Al Iniciar un Proyecto Complejo de Construcción:</strong> Si está planeando un proyecto de gran envergadura, como la construcción de un edificio, una carretera, o infraestructura pública, nuestros servicios de ejecución son fundamentales para asegurar que el proyecto se complete de manera eficiente y sin contratiempos.</li>
+            <li><strong>Cuando Requiere Cumplimiento Estricto de Normativas:</strong> Los proyectos que requieren un alto grado de cumplimiento con normativas legales, ambientales o de seguridad se benefician enormemente de nuestra experiencia en la gestión y ejecución de proyectos bajo estrictos estándares de calidad.</li>
+            <li><strong>Para Proyectos con Plazos Ajustados:</strong> Si necesita completar un proyecto dentro de un plazo específico y ajustado, nuestro enfoque en la planificación detallada y la gestión eficiente de recursos asegura que los plazos sean cumplidos sin sacrificar la calidad.</li>
+            <li><strong>En Proyectos con Altas Expectativas de Calidad:</strong> Los proyectos donde la calidad es un factor crítico se beneficiarán de nuestra rigurosa supervisión y control de calidad durante toda la ejecución.</li>
+          </ul>
+
+          <h6><strong>Recomendaciones para los Clientes de EMAO</strong></h6>
+          <ul>
+            <li><strong>Defina Claramente sus Expectativas:</strong> Es importante que tenga una idea clara de lo que espera del proyecto, incluyendo los objetivos, plazos, y estándares de calidad. Esto nos permitirá alinear nuestros esfuerzos con sus expectativas desde el principio.</li>
+            <li><strong>Participe en la Planificación Inicial:</strong> Su participación en la fase de planificación es clave para asegurar que todas sus necesidades y preocupaciones sean abordadas. Trabajaremos juntos para desarrollar un plan que cumpla con sus objetivos.</li>
+            <li><strong>Mantenga una Comunicación Abierta y Constante:</strong> Durante la ejecución del proyecto, la comunicación regular con nuestro equipo es esencial para resolver cualquier problema que pueda surgir y para garantizar que el proyecto se mantenga en curso.</li>
+            <li><strong>Confíe en el Proceso de Supervisión y Control de Calidad:</strong> Nuestro enfoque en la supervisión y el control de calidad está diseñado para minimizar errores y garantizar la excelencia en cada fase del proyecto. Confíe en nuestros procedimientos para entregar resultados que superen sus expectativas.</li>
+            <li><strong>Revise los Reportes de Progreso:</strong> Revise los informes periódicos que le proporcionaremos para estar al tanto del estado del proyecto. Esto le permitirá tomar decisiones informadas y realizar ajustes si es necesario.</li>
+            <li><strong>Esté Preparado para la Entrega y Cierre del Proyecto:</strong> La fase final de entrega es crucial. Asegúrese de que todos los aspectos del proyecto estén conforme a sus expectativas antes de la aceptación final. Aproveche esta oportunidad para discutir cualquier asunto pendiente.</li>
+          </ul>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
-<!-- Modal: Diagnósticos de infraestructura y servicios -->
-<div class="modal fade" id="modalDiagnosticos" tabindex="-1" aria-labelledby="modalDiagnosticosLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalDiagnosticosLabel">Diagnósticos de infraestructura y servicios</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Contenido del modal -->
-                <p> Evaluaremos las diferencias entre la oferta existente y la demanda de tu infraestructura y servicios en la región y sector que este tu empresa.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
+ <!-- Modal Diagnóstico de Infraestructura y Servicios -->
+<div class="modal fade" id="modalDiagnosticos" tabindex="-1" aria-labelledby="modalDiagnosticoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalDiagnosticoLabel"><strong>Diagnóstico de Infraestructura y Servicios</strong></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <!-- Contenido detallado del servicio -->
+          <h6><strong>¿Qué Incluye un Diagnóstico de Infraestructura y Servicios en EMAO?</strong></h6>
+          <ul>
+            <li><strong>Evaluación Técnica de Infraestructuras:</strong>
+              <p><strong>Contenido:</strong> Inspección detallada de las infraestructuras existentes, incluyendo edificios, carreteras, puentes, sistemas de agua, y otras instalaciones críticas. Se utilizan herramientas de diagnóstico avanzadas para identificar daños estructurales, desgaste, y posibles fallos.</p>
+              <p><strong>Objetivo:</strong> Proporcionar un informe completo sobre el estado de las infraestructuras, destacando las áreas que requieren reparación o mantenimiento.</p>
+            </li>
+            <li><strong>Análisis de Capacidad y Eficiencia Operativa:</strong>
+              <p><strong>Contenido:</strong> Evaluación de la capacidad y eficiencia de los servicios asociados a las infraestructuras, como el suministro de agua, energía, y servicios de transporte. Se analiza si las infraestructuras cumplen con las demandas actuales y futuras.</p>
+              <p><strong>Objetivo:</strong> Identificar oportunidades para optimizar la operación y mejorar la eficiencia de los servicios, reduciendo costos operativos y mejorando la satisfacción del usuario final.</p>
+            </li>
+            <li><strong>Revisión de Cumplimiento Normativo:</strong>
+              <p><strong>Contenido:</strong> Verificación de que las infraestructuras y servicios cumplen con las normativas vigentes en términos de seguridad, medio ambiente, y regulaciones técnicas. Se evalúa la conformidad con las leyes y regulaciones aplicables.</p>
+              <p><strong>Objetivo:</strong> Asegurar que las infraestructuras y servicios estén en pleno cumplimiento de las normativas, evitando sanciones legales y garantizando la seguridad y sostenibilidad.</p>
+            </li>
+            <li><strong>Diagnóstico de Mantenimiento y Durabilidad:</strong>
+              <p><strong>Contenido:</strong> Análisis de los programas de mantenimiento existentes y su efectividad para prolongar la vida útil de las infraestructuras. Se identifican posibles mejoras en las prácticas de mantenimiento.</p>
+              <p><strong>Objetivo:</strong> Extender la vida útil de las infraestructuras mediante la implementación de mejores prácticas de mantenimiento y la planificación de intervenciones preventivas.</p>
+            </li>
+            <li><strong>Estudios de Impacto Ambiental y Social:</strong>
+              <p><strong>Contenido:</strong> Evaluación del impacto ambiental y social de las infraestructuras y servicios. Se analizan los efectos sobre el entorno natural y las comunidades locales, con recomendaciones para mitigar cualquier impacto negativo.</p>
+              <p><strong>Objetivo:</strong> Garantizar que las infraestructuras y servicios operen de manera sostenible, minimizando los impactos ambientales y mejorando la aceptación social del proyecto.</p>
+            </li>
+            <li><strong>Propuesta de Soluciones y Mejoras:</strong>
+              <p><strong>Contenido:</strong> Desarrollo de un plan de acción con recomendaciones específicas para mejorar la infraestructura y los servicios. Esto puede incluir reparaciones, modernización, ampliación de capacidades, o cambios en la operación.</p>
+              <p><strong>Objetivo:</strong> Proporcionar a su entidad soluciones prácticas y viables para optimizar sus infraestructuras y servicios, asegurando su eficiencia y sostenibilidad a largo plazo.</p>
+            </li>
+            <li><strong>Informe Final y Presentación de Resultados:</strong>
+              <p><strong>Contenido:</strong> Elaboración de un informe detallado que resume los hallazgos del diagnóstico, acompañado de gráficos, tablas, y recomendaciones claras. Se realiza una presentación de los resultados a los tomadores de decisiones de su entidad.</p>
+              <p><strong>Objetivo:</strong> Facilitar la toma de decisiones informadas por parte de su entidad, asegurando que el diagnóstico sea comprensible y aplicable.</p>
+            </li>
+          </ul>
+
+          <h6><strong>Cuándo Utilizar los Servicios de Diagnóstico de Infraestructura y Servicios de EMAO</strong></h6>
+          <ul>
+            <li><strong>Para Identificar Necesidades de Mantenimiento:</strong> Si su entidad sospecha que las infraestructuras pueden estar deteriorándose o necesitando mantenimiento, un diagnóstico exhaustivo le permitirá identificar las áreas críticas que requieren atención inmediata.</li>
+            <li><strong>Antes de Planificar Nuevas Inversiones en Infraestructura:</strong> Antes de realizar inversiones significativas en nuevas infraestructuras o en la mejora de las existentes, es crucial contar con un diagnóstico preciso que asegure que las inversiones se destinen a las áreas más necesitadas.</li>
+            <li><strong>Para Garantizar el Cumplimiento Normativo:</strong> Si su entidad necesita asegurarse de que las infraestructuras y servicios cumplan con las normativas legales, un diagnóstico puede identificar cualquier incumplimiento y proporcionar un plan para corregirlo.</li>
+            <li><strong>Cuando Busque Optimizar la Operación de Servicios:</strong> Si los servicios asociados a sus infraestructuras no están funcionando a su máxima capacidad o eficiencia, un diagnóstico detallado puede identificar las causas y ofrecer soluciones para mejorar el rendimiento.</li>
+            <li><strong>En Proyectos de Modernización o Expansión:</strong> Al planificar la modernización o expansión de infraestructuras existentes, un diagnóstico es esencial para comprender las capacidades actuales y cómo pueden mejorarse.</li>
+          </ul>
+
+          <h6><strong>Recomendaciones para los Clientes de EMAO</strong></h6>
+          <ul>
+            <li><strong>Proporcione Información Completa:</strong> Cuanta más información pueda proporcionar sobre el estado actual de sus infraestructuras y servicios, más preciso será el diagnóstico. Esto incluye planos, históricos de mantenimiento, y datos operativos.</li>
+            <li><strong>Participe Activamente en el Proceso:</strong> La participación de su entidad durante el diagnóstico es crucial. Esto asegura que las recomendaciones finales se alineen con sus objetivos estratégicos y necesidades operativas.</li>
+            <li><strong>Revise Detenidamente el Informe Final:</strong> El informe de diagnóstico es una herramienta clave para la toma de decisiones. Asegúrese de revisar cada sección con atención y discuta cualquier duda o preocupación con nuestro equipo.</li>
+            <li><strong>Implemente las Recomendaciones de Manera Gradual:</strong> Las mejoras recomendadas pueden ser implementadas de manera gradual, priorizando las áreas que más impacto tendrán en la operación y sostenibilidad de las infraestructuras.</li>
+            <li><strong>Planifique a Largo Plazo:</strong> Un diagnóstico de infraestructura no solo debe abordar las necesidades inmediatas, sino también prever el futuro. Utilice el informe para planificar a largo plazo, asegurando la durabilidad y eficiencia de sus infraestructuras.</li>
+            <li><strong>Considere la Sostenibilidad:</strong> Asegúrese de que las soluciones propuestas consideren no solo la viabilidad técnica y económica, sino también la sostenibilidad ambiental y social. Esto contribuirá a la aceptación del proyecto por parte de la comunidad y a su éxito a largo plazo.</li>
+          </ul>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
-<!-- Modal: Actividades de intervención inmediata -->
-<div class="modal fade" id="modalIntervencion" tabindex="-1" aria-labelledby="modalIntervencionLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalIntervencionLabel">Actividades de intervención inmediata</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Contenido del modal -->
-                <p>Descripción detallada de las actividades de intervención inmediata...</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
+  
+  <!-- Modal Actividades de Intervención Inmediata -->
+  <div class="modal fade" id="modalIntervencion" tabindex="-1" aria-labelledby="modalIntervencionLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalIntervencionLabel">Actividades de intervención inmediata</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <!-- Contenido detallado del servicio -->
+          <p>Descripción completa del servicio de actividades de intervención inmediata...</p>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+  
 
-    <!-- Projects Section -->
-    <section id="projects" class="bg-light py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2>Nuestros Proyectos</h2>
-                <p class="lead">Algunos de nuestros trabajos más recientes.</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="card">
-                        <img src="project1.jpg" class="card-img-top" alt="Proyecto 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto 1</h5>
-                            <p class="card-text">Descripción breve del proyecto.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card">
-                        <img src="project2.jpg" class="card-img-top" alt="Proyecto 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto 2</h5>
-                            <p class="card-text">Descripción breve del proyecto.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card">
-                        <img src="project3.jpg" class="card-img-top" alt="Proyecto 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto 3</h5>
-                            <p class="card-text">Descripción breve del proyecto.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Consultation Form Modal -->
-    <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="consultationModalLabel">Consulta con un Experto</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="name" class="form-label">Nombre y Apellido</label>
-                                <input type="text" class="form-control" id="name" placeholder="Tu nombre completo">
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="email" class="form-label">Correo Electrónico</label>
-                                <input type="email" class="form-control" id="email" placeholder="Tu email">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="phone" class="form-label">Teléfono</label>
-                                <input type="tel" class="form-control" id="phone" placeholder="Tu teléfono">
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="company" class="form-label">Empresa</label>
-                                <input type="text" class="form-control" id="company" placeholder="Nombre de tu empresa">
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Tu Mensaje</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="privacy-policy">
-                            <label class="form-check-label" for="privacy-policy">He leído y aceptado la <a href="#">Política de Privacidad</a>.</label>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="marketing-consent">
-                            <label class="form-check-label" for="marketing-consent">
-                                Usted autoriza la utilización de sus datos con fines de comunicación y/o marketing para enviarle promociones, campañas, descuentos y otros beneficios similares a través de correos electrónicos y mensajes de texto (SMS).
-                            </label>
-                        </div>
-                        <button type="button" class="btn btn-light" onclick="sendWhatsAppMessage()">Enviar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-   <!-- Contact Section -->
-<section id="contact" class="bg-dark text-white text-center py-4">
-    <div class="container">
-        <div class="row text-center text-md-left">
-            <!-- Logo e Información -->
-            <div class="col-md-3 mb-4">
-                <img src="logo.png" alt="Logo" class="img-fluid mb-2"> <!-- Asegúrate de usar la ruta correcta del logo -->
-               
-            </div>
-            <!-- Servicios -->
-            <div class="col-md-3 mb-4">
-                <h5>SERVICIOS</h5>
-                <ul class="list-unstyled">
-                    <li>Estudios de pre inversion</li>
-                    <li>expedientes tecnicos</li>
-                    <li>Ejecucion de obras</li>
-                    <li>Ejecucion de proyectos</li>
-                </ul>
-            </div>
-            <!-- Información -->
-            <div class="col-md-3 mb-4">
-                <h5>INFORMACIÓN</h5>
-                <ul class="list-unstyled">
-                    <li>Home</li>
-                    <li>Sobre nosotros</li>
-                    <li>Mapa de sitio</li>
-                    <li>Contáctenos</li>
-                </ul>
-            </div>
-            <!-- Síguenos -->
-            <div class="col-md-3 mb-4">
-                <h5>SÍGUENOS</h5>
-                <a href="#"><img src="facebook-icon.png" alt="Facebook" class="social-icon"></a>
-                <a href="#"><img src="youtube-icon.png" alt="YouTube" class="social-icon"></a>
-                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn" class="social-icon"></a>
-            </div>
-        </div>
+<section class="py-5">
+    <div class="container-fluid">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#consultaModal">
+            Consulta Gratuita !!
+          </button>        
     </div>
 </section>
 
+  <!-- Modal Consulta Gratuita -->
+<div class="modal fade" id="consultaModal" tabindex="-1" aria-labelledby="consultaModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="consultaModalLabel">Consulta Gratuita</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="consultaForm">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="numero" class="form-label">Número de Celular</label>
+            <input type="tel" class="form-control" id="numero" name="numero" required>
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="correo" name="correo" required>
+          </div>
+          <div class="mb-3">
+            <label for="empresa" class="form-label">Empresa</label>
+            <input type="text" class="form-control" id="empresa" name="empresa">
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+   <!-- Projects Section -->
+<section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Proyectos Destacados</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 d-flex flex-column align-items-center">
+          <img
+            src="https://via.placeholder.com/350x250"
+            class="img-fluid rounded mb-4"
+            alt="Proyecto 1"
+          />
+          <h6 class="text-center">ADQUISICION DE AULA DE COMPUTO; EN EL(LA) I.E. 21001 ZOILO CANDELA SANCHEZ DISTRITO DE IMPERIAL, PROVINCIA CAÑETE, DEPARTAMENTO LIMA</h6>
+        </div>
+        <div class="col-lg-4 d-flex flex-column align-items-center">
+          <img
+            src="https://via.placeholder.com/350x250"
+            class="img-fluid rounded mb-4"
+            alt="Proyecto 2"
+          />
+          <h6 class="text-center">CONSTRUCCION DE CERCO PERIMETRICO; ADQUISICION DE DEPOSITO DE RESIDUOS SOLIDOS, CAPACIDAD HUMANA Y TRIMOVIL; ADEMÁS DE OTROS ACTIVOS EN EL(LA) BOTADERO MUNICIPAL DEL C.P. CHOQUE Y C.P. COPA DISTRITO DE SAN PEDRO, PROVINCIA OCROS, DEPARTAMENTO ANCASH</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <div class="container">
+    <footer id="contact" class="bg-dark text-white text-center text-lg-start py-4">
+      <div class="container">
+        <div class="row">
+          <!-- Logo e información básica -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">EMAO Consultora Constructora</h5>
+            <p>
+              Brindando soluciones integrales en construcción y consultoría.
+            </p>
+          </div>
 
-            <p class="mb-0">© 2024 EMAO Constructora Consultora SAC. Todos los derechos reservados.</p>
+          <!-- Enlaces rápidos -->
+          <div class="col-lg-2 col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Enlaces</h5>
+            <ul class="list-unstyled">
+              <li><a href="#services" class="text-white">Servicios</a></li>
+              <li><a href="#about" class="text-white">Sobre Nosotros</a></li>
+              <li><a href="#projects" class="text-white">Proyectos</a></li>
+              <li><a href="#contact" class="text-white">Contacto</a></li>
+            </ul>
+          </div>
+
+          <!-- Información de contacto -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Contacto</h5>
+            <p><i class="fas fa-phone-alt"></i> +51 968215184</p>
+            <p><i class="fas fa-envelope"></i> eliasadauto@constructoraemao.com</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Calle San fransisco 365 Ubr. Santa catalina - Barranca - Lima
+            </p>
+          </div>
+
+          <!-- Mapa de Google Maps -->
+          <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Nuestra Ubicación</h5>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6363.789698442622!2d-77.77235962181422!3d-10.743134439176915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1725251321793!5m2!1ses-419!2spe" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>              
+            </div>
+          </div>
         </div>
+
+        <!-- Derechos reservados -->
+        <div class="text-center py-3">
+          <p>
+            &copy; 2024 EMAO Consultora Constructora. Todos los derechos
+            reservados.
+          </p>
+        </div>
+      </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>

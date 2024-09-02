@@ -10,6 +10,34 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.getElementById('consultaForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita el envío del formulario estándar
+
+    const formData = new FormData(this);
+    console.log("formulario enviado")
+    fetch('https://formspree.io/f/mkgwegwb', { // Reemplaza con tu URL de Formspree
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json'
+        },
+        body: formData
+    }).then(response => {
+        if (response.ok) {
+            alert('Gracias por tu consulta. Nos pondremos en contacto contigo pronto.');
+            document.getElementById('consultaForm').reset(); // Resetea el formulario
+            var consultaModal = bootstrap.Modal.getInstance(document.getElementById('consultaModal'));
+            consultaModal.hide(); // Cierra el modal
+        } else {
+            alert('Hubo un error al enviar el formulario. Por favor, intenta de nuevo.');
+        }
+    }).catch(error => {
+        console.error('Error:', error);
+        alert('Hubo un error al enviar el formulario. Por favor, intenta de nuevo.');
+    });
+});
+
+
 function sendWhatsAppMessage() {
     // Obtener los valores de los campos del formulario
     var name = document.getElementById('name').value;
@@ -33,3 +61,17 @@ function sendWhatsAppMessage() {
     // Abrir la URL en una nueva ventana o pestaña
     window.open(whatsappURL, '_blank');
 }
+type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "EMAO Consultora Constructora",
+  "url": "https://www.example.com",
+  "logo": "https://www.example.com/assets/images/Logo emao.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+51 968215184",
+    "contactType": "Customer Service"
+  }
+}
+
