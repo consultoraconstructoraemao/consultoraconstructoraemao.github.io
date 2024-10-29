@@ -1,77 +1,227 @@
-
-document.addEventListener('DOMContentLoaded', function () {
-    // Ejemplo: Cambio de color del header al hacer scroll
-    const header = document.querySelector('header');
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 100) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
+document.addEventListener("DOMContentLoaded", e =>{
+	hamburguerMenu(".boton-menu",".navbar",".enlace-menu");
 });
 
-document.getElementById('consultaForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita el envío del formulario estándar
+let d = document;
+	$navegador = d.getElementById("nav"),
+	$logo = d.getElementById("logo"),
+	$menuResponsive= d.getElementById("lista-menu"),
+	$logoLight = d.getElementById("logo_principal"),
+	$logoDark = d.getElementById("logo_secundario"),
+	$colorBoton= d.querySelector(".hamburger-inner"),
+	$colorVerde= "var(--color-principal) !important",
+	$colorBlanco= "#ffffff !important",
+	$enlaceMenu= d.querySelectorAll(".enlace-menu"),
+	$enlaceProyectos= d.getElementById("enlace1");
 
-    const formData = new FormData(this);
-    console.log("formulario enviado")
-    fetch('https://formspree.io/f/mkgwegwb', { // Reemplaza con tu URL de Formspree
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json'
-        },
-        body: formData
-    }).then(response => {
-        if (response.ok) {
-            alert('Gracias por tu consulta. Nos pondremos en contacto contigo pronto.');
-            document.getElementById('consultaForm').reset(); // Resetea el formulario
-            var consultaModal = bootstrap.Modal.getInstance(document.getElementById('consultaModal'));
-            consultaModal.hide(); // Cierra el modal
-        } else {
-            alert('Hubo un error al enviar el formulario. Por favor, intenta de nuevo.');
-        }
-    }).catch(error => {
-        console.error('Error:', error);
-        alert('Hubo un error al enviar el formulario. Por favor, intenta de nuevo.');
-    });
-});
+function hamburguerMenu(btn,ul,enlace){
 
-
-function sendWhatsAppMessage() {
-    // Obtener los valores de los campos del formulario
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var telefono = document.getElementById('phone').value;
-    var empresa = document.getElementById('company').value;
-    var message = document.getElementById('message').value;
-
-    // El número de teléfono con el código de país (sin el signo +)
-    var phoneNumber = '51968215184';
-
-    // Mensaje personalizado para enviar en WhatsApp
-    var whatsappMessage = 'Hola, soy ' + name + '\n' + 'Mi correo es: ' + email + '\n' +'mi numero es: '+ telefono +'\n' +'soy de: '+ empresa +'\n' +'tengo una consulta: '+ message;
-
-    // Codificar el mensaje para que sea compatible con URL
-    var encodedMessage = encodeURIComponent(whatsappMessage);
-
-    // Construir la URL de WhatsApp
-    var whatsappURL = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + encodedMessage;
-
-    // Abrir la URL en una nueva ventana o pestaña
-    window.open(whatsappURL, '_blank');
-}
-type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "EMAO Consultora Constructora",
-  "url": "https://www.example.com",
-  "logo": "https://www.example.com/assets/images/Logo emao.png",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+51 968215184",
-    "contactType": "Customer Service"
-  }
+	document.addEventListener("click", e => {
+		if(e.target.matches(btn) || e.target.matches(".span") ){
+			document.querySelector(ul).classList.toggle("mostrar-menu");
+			document.querySelector(btn).classList.toggle("is-active");
+		}
+		if(e.target.matches(enlace)){
+			document.querySelector(ul).classList.remove("mostrar-menu");
+			document.querySelector(btn).classList.remove("is-active");
+		}
+	})
 }
 
+	d.addEventListener("click", e => {
+		if(e.target.matches("svg") || e.target.matches("span") || e.target.matches("a")){
+			$enlaceProyectos.classList.remove("activo");
+		}
+		
+	});
+		
+// *****   V A L I D A C I O N   D E    F O R M U L A R I O   *****
+	const btnEnviar = d.getElementById("enviar");
+	const nombre = d.getElementById("nombre");
+	const apellido = d.getElementById("apellido");
+	const email = d.getElementById("email");
+	const celular = d.getElementById("celular");
+	const asunto = d.getElementById("asunto");
+	const mensaje = d.getElementById("mensaje");
+	const formulario = d.getElementById("formulario");
+
+	const er = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			
+
+	eventListeners();
+	function eventListeners(){
+
+		addEventListener("DOMContentLoaded", iniciarApp);
+
+		nombre.addEventListener("blur", validarFormulario);
+		apellido.addEventListener("blur", validarFormulario);
+		email.addEventListener("blur", validarFormulario);
+		celular.addEventListener("blur", validarFormulario);
+		asunto.addEventListener("blur", validarFormulario);
+		mensaje.addEventListener("blur", validarFormulario);
+		
+
+		formulario.addEventListener("submit", enviarEmail);
+	}
+
+
+
+
+	function iniciarApp(){
+
+		btnEnviar.disabled = true;
+		btnEnviar.classList.add("bloqueado");
+	}
+
+	function validarFormulario(e){
+		
+		if(e.target.value.length > 0){
+			e.target.classList.remove("alerta");
+			e.target.classList.add("ok");
+			const error = d.querySelector("p.mensaje-alerta");
+
+			
+		} else{
+			e.target.classList.remove("ok");
+			e.target.classList.add("alerta");
+
+			mostrarError("¡Todos los campos son obligatorios!");
+		}
+
+		if (e.target.type === "email") {
+			
+			if (er.test(e.target.value)) {
+
+				const error = d.querySelector("p.mensaje-alerta");
+				if(error){
+				error.remove();
+				}
+						
+				e.target.classList.remove("alerta");
+				e.target.classList.add("ok");
+					
+			} else {
+				
+				mostrarError("El correo no es válido");
+				e.target.classList.remove("ok");
+				e.target.classList.add("alerta");
+				}
+		}
+
+		if (nombre.value !== "" && apellido.value !== "" && er.test(email.value) && celular.value !== "" && asunto.value !== "" && mensaje.value !== "" ) {
+
+			btnEnviar.disabled = false;
+			btnEnviar.classList.remove("bloqueado");
+
+			const error = d.querySelector("p.mensaje-alerta");
+			if(error){
+				error.remove();
+			}
+			
+
+		} 
+	}
+
+	function mostrarError(mensaje){
+
+		const mensajeError = d.createElement("p");
+		mensajeError.textContent = mensaje;
+		mensajeError.classList.add("mensaje-alerta","error");
+
+		const errores = d.querySelectorAll(".error");
+
+		if (errores.length === 0){
+			formulario.append(mensajeError);
+		}
+		
+	}
+
+	function enviarEmail(e){
+		e.preventDefault();
+
+		const spinner = d.getElementById("spinner");
+
+		spinner.style.display = "block";
+	
+		setTimeout( () => {
+
+			spinner.style.display = "none";
+
+			const parrafo= d.createElement("p");
+			parrafo.textContent = "Mensaje enviado con éxito.";
+			parrafo.classList.add("parrafo");
+
+			formulario.insertBefore(parrafo, spinner);
+
+			setTimeout( () => {
+
+				parrafo.remove();
+				resetearFormulario();
+     
+			}, 5000)
+		}, 3000);
+
+		console.log("enviando");
+	}
+
+
+	function resetearFormulario(){
+
+		formulario.reset();
+		iniciarApp();
+	}
+
+
+
+	
+// ***********************************************************************
+
+
+
+function enlaceMenuAdd(){
+	$enlaceMenu.forEach((e) =>{
+		e.classList.add("color2");
+	});
+}
+function enlaceMenuRemove(){
+	$enlaceMenu.forEach((e) =>{
+		e.classList.remove("color2");
+	});
+}
+
+function mostrar(){
+	if((d.documentElement.scrollTop) > 90 ){
+		$navegador.classList.remove("bg-none");
+		$navegador.classList.add("show");
+		$logoLight.classList.add("logo_display");
+		$menuResponsive.classList.add("navbar2");
+		$colorBoton.style.background = "var(--color-principal)";
+		d.styleSheets[0].addRule(".hamburger-inner::before","background: " + $colorVerde + ";");
+		d.styleSheets[0].addRule(".hamburger-inner:after","background: " + $colorVerde + ";");
+		enlaceMenuAdd();
+
+		if($logoDark.classList.contains('logo_display')){
+			$logoDark.classList.remove('logo_display');
+
+		}
+		
+		
+		
+	}else{
+		$navegador.classList.remove("show");
+		$navegador.classList.add("bg-none");
+		$colorBoton.style.background = "#ffffff";
+		$menuResponsive.classList.remove("navbar2");
+		d.styleSheets[0].addRule(".hamburger-inner::before","background: " + $colorBlanco + ";");
+		d.styleSheets[0].addRule(".hamburger-inner:after","background: " + $colorBlanco + ";");
+		enlaceMenuRemove();
+
+		if($logoLight.classList.contains('logo_display') && !($logoDark.classList.contains('logo_display'))){
+			$logoLight.classList.remove('logo_display');
+			$logoDark.classList.add("logo_display");
+
+		}
+		
+	}
+}
+onscroll = mostrar;
